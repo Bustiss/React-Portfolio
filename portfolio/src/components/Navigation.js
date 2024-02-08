@@ -1,44 +1,36 @@
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap'; // Imports Navbar, Container, and Nav from react-bootstrap
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react'; // Imports useState from react to use
+import '../App.css'; // Imports App.css for styling
 
 export const Navigation = () => { 
-    const [activeLink, setActiveLink] = useState('home'); // Add state for active link
-    const [buttonClicked, setButtonClicked] = useState(false); // Add state for button clicked
+    // STYLING FOR NAVIGATION
+    const style = {
+        fontSize: '20px',
+        margin: '0 10px',
+    } 
+    // STYLING FOR NAVIGATION
+
+    const [activeLink, setActiveLink] = useState('About'); // Add state for active link
+
+    const linkItems = ['About', 'Portfolio', 'Resume']; // ARRAY OF LINKS
+    const links = linkItems.map((link) => // Map through the array of links
+        <Nav.Link style={style} 
+            href={`#${link}`} 
+            onClick={() => setActiveLink(link)} // Set active link to the current link
+            className={activeLink === link ? 'active' : ''} // Add active class if active page is the current link
+        >
+            {link}
+        </Nav.Link>
+    );
 
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
             
                 <Nav className="me-auto">
-                    <Nav.Link 
-                        href="#about" 
-                        onClick={() => setActiveLink('about')} // Set active link to about
-                        className={activeLink === 'about' ? 'active' : ''} // Add active class if active page is about
-                    >
-                        About
-                    </Nav.Link>
-                    <Nav.Link 
-                        href="#portfolio" 
-                        onClick={() => setActiveLink('portfolio')} // Set active link to portfolio
-                        className={activeLink === 'portfolio' ? 'active' : ''} // Add active class if active page is portfolio
-                    >
-                        Portfolio
-                    </Nav.Link>
-                    <Nav.Link 
-                        href="#resume" 
-                        onClick={() => setActiveLink('resume')}  // Set active link to resume
-                        className={activeLink === 'resume' ? 'active' : ''} // Add active class if active page is resume
-                    >
-                        Resume
-                    </Nav.Link>
-                    <Button 
-                        variant="outline-info" 
-                        className={buttonClicked ? 'active' : ''} 
-                        onClick={() => setButtonClicked(true)}
-                    >
-                        Contact Me
-                    </Button>{' '}
+                    {links}
+                    <Button className="button">Contact Me</Button>{' '} 
                 </Nav>
 
             </Container>
