@@ -1,24 +1,29 @@
+import '../App.css'; // Imports App.css for styling
+
 export const About = () => { 
 
     const layout = {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'space-evenly',
         height: '100vh', 
         overflow: 'hidden' 
     }
+    // Tag Effects will be added to App.css
 
     return (
         <div id="About" style={layout}>
-            <h1> Hello 👋🏾 </h1>
-                <p>
-                I'm <span>Will</span>,A Part-Time Student And Software Developer
-                </p>
+            <div className='about-text'>
+                <h1> Hello 👋🏾 </h1>
+                    <h3>
+                    I'm Will 👨🏾‍💻, A Software Developer
+                    </h3>
+            </div>
 
-                <div className='about-image'>
-                    Pic of me
-                </div>
+            <div className='about-image'>
+                    <h3>Pic of me</h3>
+            </div>
         </div>
     )
 }
