@@ -1,17 +1,32 @@
-/* Styling for Nav Links */
+/*HEADER STYLING DONE IN HEADER.JS FILE*/
+
+/* STARTS Styling for Nav Section */
+.nav-link {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: cyan;
+  text-decoration: underline;
+}
+
 .button {
-  background: linear-gradient(to right, cyan 50%, transparent 50%);
+  background: linear-gradient(to right, cyan 50%, transparent 25%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.3s ease;
   border-radius: 20px;
   height: 40px;
   color: White;
-  font-size: '20px';
-  margin: '0 10px';
+  font-size: 20px;
+  margin: 0 10px;
 }
 
 .button:hover {
   background-position: left bottom;
   color: white;
+  transform: scale(1.1);
 }
