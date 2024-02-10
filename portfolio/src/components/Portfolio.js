@@ -17,8 +17,11 @@ export const Portfolio = () => {
     })
 
     return (
-        <div id="Portfolio" className="layout">
+        <div className="layout">
+            <h1 className="title">Projects</h1>
+            <div id="Portfolio" className="project-container">
             {projects}
+        </div>
         </div>
     )
 }

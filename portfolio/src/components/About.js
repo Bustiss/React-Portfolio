@@ -15,7 +15,7 @@ export const About = () => {
     return (
         <div id="About" style={layout}>
             <div className='about-text'>
-                <h1> Hello 👋🏾 </h1>
+                <h1 className="title"> Hello 👋🏾 </h1>
                     <h3>
                     I'm Will 👨🏾‍💻, A Software Developer
                     </h3>

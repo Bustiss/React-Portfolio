@@ -1,4 +1,35 @@
-/*HEADER STYLING DONE IN HEADER.JS FILE*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+.title {
+  color: black;
+  font-size: 50px;
+  font-family: 'Protest Riot', cursive;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* STARTS Styling for Header Section */
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  height: 80px;
+  top: 0; 
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo-font {
+  font-size: 40px;
+  font-family: 'Protest Riot', cursive;
+}
+/* Ends Styling for Header Section */
 
 /* STARTS Styling for Nav Section */
 .nav-link {
@@ -42,20 +73,45 @@
 
 /* STARTS Styling for Project Section */
 .layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  margin-top: 60px; /* to prevent the projects from being hidden behind the header */
+}
+
+@media (min-width: 600px) {
+  .layout {
+    margin-top: 80px; /* to prevent the projects from being hidden behind the header */
+  }
+}
+
+.project-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .project {
   position: relative;
-  width: 200px; /* adjust as needed */
-  height: 200px; /* adjust as needed */
+  width: 100%; 
+  height: 200px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 10px;
+}
+
+.project:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
 }
 
 .project-image {
@@ -81,6 +137,18 @@
 
 .project:hover .project-info {
   opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .project {
+    width: 50%; /* 2 projects per row on medium screens */
+  }
+}
+
+@media (min-width: 900px) {
+  .project {
+    width: 25%; /* 4 projects per row on large screens */
+  }
 }
 
 /* ENDS Styling for Project Section */
