@@ -25,7 +25,7 @@ export const Navigation = ({ setActiveLink, activeLink }) => {
             
                 <Nav className="me-auto">
                     {links}
-                    <Button className="button">Contact Me</Button>{' '} 
+                    <Button className="button" onClick={() => handleNavClick('Contact')}>Contact Me</Button>{' '} 
                 </Nav>
 
             </Container>

@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { Header } from './components/Header';
 import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
-//import { Resume } from './components/Resume';
-//import { Contact } from './components/Contact';
+import { Resume } from './components/Resume';
+import { Contact } from './components/Contact';
 
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
         return <About />;
       case 'Portfolio':
         return <Portfolio />;
-      //case 'Resume':
-        //return <Resume />;
-        //case 'Contact':
-        //return <Contact />;
+      case 'Resume':
+        return <Resume />;
+      case 'Contact':
+        return <Contact />;
       default:
         return <About />;
     }
