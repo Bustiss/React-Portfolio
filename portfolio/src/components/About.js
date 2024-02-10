@@ -15,10 +15,10 @@ export const About = () => {
     return (
         <div id="About" style={layout}>
             <div className='about-text'>
-                <h1 className="title"> Hello 👋🏾 </h1>
-                    <h3>
+                <h1> Hello 👋🏾 </h1>
+                    <h1>
                     I'm Will 👨🏾‍💻, A Software Developer
-                    </h3>
+                    </h1>
             </div>
 
             <div className='about-image'>
