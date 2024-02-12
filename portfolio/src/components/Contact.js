@@ -1,17 +1,24 @@
 export const Contact = () => {
 
-    const backGround = {
-        backgroundColor: 'lightgrey',
-        padding: '20px',
-        margin: '20px',
-        borderRadius: '10px',
-        boxShadow: '5px 5px 5px black'
-    }
-
     return (
-        <div style={backGround}>
-            <h1>Contact</h1>
-            <p>My contact Form will go here</p>
+        <div className="contact-container">
+            <div className="contact-me">
+                <p className="contact-title">Contact Me</p>
+                <p className="contact-messaage">Thank you for taking the time to visit my portfolio, Any questions, feel free to contact me by Email, Phone, or LinkedIn</p>
+                <br></br>
+                <p className="contact-messaage">Phone: (###) ###- #### </p>
+            </div>
+            <div className="form-container">
+                <form className="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required></input>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required></input>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Submit"></input>
+                </form>
+            </div>    
         </div>
     )
 }
