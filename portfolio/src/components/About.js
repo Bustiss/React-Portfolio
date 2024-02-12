@@ -3,7 +3,7 @@ import '../App.css'; // Imports App.css for styling
 
 export const About = () => { 
     const [text, setText] = useState("");
-    const fullText = "I'm Will 👨🏾‍💻, A Software Developer and Father. ";
+    const fullText = "I'm Will 👨🏾‍💻, A Software Developer and Father. I created this site to display my projects and connect with other developers! ";
 
     useEffect(() => {
         let i = 0;
@@ -14,7 +14,7 @@ export const About = () => {
             } else {
                 clearInterval(typing);
             }
-        }, 100); // Speed of typing effect
+        }, 50); // Speed of typing effect
         return () => clearInterval(typing); // Cleanup on unmount
     }, []);
 

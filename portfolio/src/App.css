@@ -65,12 +65,18 @@
 /* ENDS Styling for Nav Section */
 
 /* STARTS Styling for About Section */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .about-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  animation: fadeIn 2s ease-in-out;
   overflow: hidden;
 }
 
