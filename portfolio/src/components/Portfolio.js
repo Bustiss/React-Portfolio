@@ -2,26 +2,19 @@ import Projects from './Projects';
 
 export const Portfolio = () => {
 
-    const projects = Projects.map((project, index) => {
-        return (
-            <div key={index} className="project">
-                <div className="project-image">
-                    <img src={project.image} alt={project.name} />
-                </div>
+return (
+    <div className="project-page">
+    <div className="project-container">
+        {Projects.map((project, index) => (
+            <a className="project" href={project.link} target="_blank" rel="noopener noreferrer" key={index}>
+                <img className="project-image" src={project.image} alt={project.name} />
                 <div className="project-info">
-                    <p>{project.name}</p>
-                    <p>{project.description}</p>
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
                 </div>
-            </div>
-        )
-    })
-
-    return (
-        <div className="layout">
-            <h1 className="title">Projects</h1>
-            <div id="Portfolio" className="project-container">
-            {projects}
+            </a>
+        ))}
         </div>
-        </div>
-    )
-}
+    </div>
+    );
+};

@@ -1,32 +1,38 @@
 [
     {
-        "image": "https://via.placeholder.com/200",
-        "name": "LACK",
-        "description": "Visit for Description"
+        "image": "./images/Quiz-Game.png",
+        "name": "Quiz Game",
+        "link": "liiv-dev.github.io/Coding-Quiz/",
+        "description": "Fun Quiz Game to play when your bored!"
     },
     {
-        "image": "https://via.placeholder.com/200",
-        "name": "LACK",
-        "description": "Visit for Description"
+        "image": "./images/WeatherAPI.png",
+        "name": "Weather Api",
+        "link": "liiv-dev.github.io/Weather-App/",
+        "description": "App to check weather in the US's biggest cities!"
     },
     {
-        "image": "https://via.placeholder.com/200",
-        "name": "LACK",
-        "description": "Visit for Description"
+        "image": "./images/Work-day-scheduler.png",
+        "name": "WordDay Scheduler",
+        "link": "liiv-dev.github.io/Work-Day-Scheduler/",
+        "description": "Calendar Application that allows a user to save events for each hour of a typical working day"
     },
     {
-        "image": "https://via.placeholder.com/200",
-        "name": "LACK",
-        "description": "Visit for Description"
+        "image": "./images/ORM-Backend.jpeg",
+        "name": "ORM-E-Commerce",
+        "link": "https://www.youtube.com/watch?v=9OPzR45TTMA",
+        "description": "Walkthrough for the back end for an e-commerce site. Working with Express.js API and configure it to use Sequelize to interact with a MySQL database"
     },
     {
-        "image": "https://via.placeholder.com/200",
-        "name": "LACK",
-        "description": "Visit for Description"
+        "image": "/images/NoSQL.png",
+        "name": "NoSQL Social Network",
+        "link": "https://www.youtube.com/watch?v=MvnfrBR-FvU",
+        "description": "Walkthrough API for my social network that uses a NoSQL database SO THAT the website can handle large amounts of unstructured data"
     },
     {
-        "image": "https://via.placeholder.com/200",
-        "name": "LACK",
-        "description": "Visit for Description"
+        "image": "/images/place holder pic.webp",
+        "name": "Check Back",
+        "link": "...",
+        "description": "A Description is supposd to go here😓"
     }
 ]

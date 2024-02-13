@@ -5,7 +5,6 @@
   font-size: 50px;
   font-family: 'Protest Riot', cursive;
   text-align: center;
-  text-decoration: underline;
 }
 
 /* STARTS Styling for Header Section */
@@ -65,19 +64,16 @@
 /* ENDS Styling for Nav Section */
 
 /* STARTS Styling for About Section */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 .about-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  animation: fadeIn 2s ease-in-out;
+  height: calc(100vh - 60px);
   overflow: hidden;
+  margin-top: 60px; /* to prevent the contact form from being hidden behind the header */
+  overflow: hidden;
+  background: linear-gradient(125deg, black 45%, white 90%);
 }
 
 .text-container {
@@ -85,56 +81,63 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
   margin: 50px;
+  height: 400px;
   width: 30%;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -12px 12px 10px cyan;
+}
+
+.about-title {
+  color: white;
+  font-size: 50px;
+  font-family: 'Protest Riot', cursive;
+  text-align: center;
 }
 
 .about-text {
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 50px;
 }
 
 .about-image {
-  border: 1px solid red;
-  width: 200px;
+  box-shadow: 12px -12px 10px cyan;
+  border-radius: 10px;
+  width: 30%;
   height: 400px;
 }
 /* ENDS Styling for About Section */
 
 /* STARTS Styling for Project Section */
-.layout {
-  width: 100%;
+.project-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: calc(100vh - 80px);
   overflow: hidden;
-  margin-top: 60px; /* to prevent the projects from being hidden behind the header */
-}
-
-@media (min-width: 250px) {
-  .layout {
-    margin-top: 90px; /* to prevent the projects from being hidden behind the header */
-  }
 }
 
 .project-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  overflow: auto;
-  border-radius: 10px;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 90px; /* to prevent the projects from being hidden behind the header */
 }
 
 .project {
   position: relative;
-  width: 100%; 
+  text-align: center;
+  width: 100%;
   height: 200px; 
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   margin: 10px;
 }
 
@@ -147,6 +150,7 @@
 .project-image {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .project-info {
@@ -212,6 +216,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  margin-top: 80px;
   margin: 30px;
   padding: 20px;
   width: 400px;
@@ -237,6 +242,7 @@
   box-shadow: 12px 12px 10px cyan;
   width: 400px;
   margin: 30px;
+  margin-top: 80px;
 }
 
 .contact-form {

@@ -21,7 +21,7 @@ export const About = () => {
     return (
         <div id="About" className="about-container">
             <div className="text-container">
-                <h1 className="title"> Hello 👋🏾 </h1>
+                <h1 className="about-title"> Hello 👋🏾 </h1>
                 <p className='about-text'>{text}</p>
             </div>
 
