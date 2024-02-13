@@ -9,14 +9,13 @@
 
 /* STARTS Styling for Header Section */
 .header {
+  position: relative;
   background-color: black;
   color: white;
   padding: 20px;
   text-align: center;
-  position: fixed;
   height: 80px;
   top: 0; 
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -39,9 +38,8 @@
 }
 
 .nav-link:hover {
+  color: cyan;
   text-decoration: underline;
-  transform: scale(1.1); 
-  transition: transform 0.3s ease;
 }
 
 .button {
@@ -69,10 +67,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 60px);
-  overflow: hidden;
-  margin-top: 60px; /* to prevent the contact form from being hidden behind the header */
-  overflow: hidden;
+  height: 100vh;
   background: linear-gradient(125deg, black 45%, white 90%);
 }
 
@@ -84,7 +79,7 @@
   padding: 20px;
   margin: 50px;
   height: 400px;
-  width: 30%;
+  width: 400px;
   color: white;
   border-radius: 10px;
   box-shadow: -12px 12px 10px cyan;
@@ -117,8 +112,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  margin-top: -20px;
+  margin-bottom: 40px; /* to prevent the footer from being hidden behind the projects */
 }
 
 .project-container {
@@ -127,7 +122,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
 }
 
@@ -135,7 +129,7 @@
   position: relative;
   text-align: center;
   width: 100%;
-  height: 200px; 
+  height: 250px; 
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -196,18 +190,100 @@
 /* STARTS Styling for Resume Section */
 .resume-page {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
+  margin-bottom: 10px; /* to prevent the footer from being hidden behind the projects */
+}
+
+.resume-title {
+  color: black;
+  font-size: 30px;
+  font-family: 'Protest Riot', cursive;
+  text-align: center;
 }
 
 .resume-container {
-  padding: 20px;
+  background-color: white;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
   width: 80%;
-  margin-top: 80px;
-  border-radius: 10px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  }
+
+.job-container {
+  width: 500px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 10px cyan;
+  padding: 20px;
 }
+
+.education-container {
+  width: 500px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 10px cyan;
+  padding: 20px;
+  min-height: 100%;
+}
+
+.skill {
+  margin: 5px;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 12px 12px 10px cyan;
+  padding: 20px;
+}
+
+.skills-progression {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.circle {
+  border-radius: 50%;
+  position: relative;
+  animation: bubble 6s infinite;
+}
+
+@keyframes bubble {
+  0% {
+      box-shadow: 0 0 0px rgba(81, 197, 207, 0.5);
+  }
+  50% {
+      box-shadow: 0 0 20px 10px rgba(81, 197, 207, 0.5);
+  }
+  100% {
+      box-shadow: 0 0 0px rgba(81, 197, 207, 0.5);
+  }
+}
+
 /* ENDS Styling for Resume Section */
 
 /* STARTS Styling for Contact Section */
@@ -218,9 +294,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 60px);
+  height: 100vh;
   overflow: hidden;
-  margin-top: 60px; /* to prevent the contact form from being hidden behind the header */
   background: linear-gradient(125deg, black 45%, white 90%);
 }
 
@@ -312,6 +387,7 @@ input[type="submit"]:hover {
 
 /* STARTS Styling for Footer Section */
 .footer {
+  position: relative;
   background-color: black;
   color: white;
   padding: 20px;
