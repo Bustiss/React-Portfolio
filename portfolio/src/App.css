@@ -42,6 +42,11 @@
   text-decoration: underline;
 }
 
+.nav-link.active {
+  color: cyan; /* Change the color of the active link to cyan */
+  text-decoration: underline; /* Underline the active link */
+}
+
 .button {
   background: linear-gradient(to right, cyan 50%, transparent 25%);
   background-size: 200% 100%;
@@ -58,6 +63,10 @@
   background-position: left bottom;
   color: white;
   transform: scale(1.1);
+}
+
+.button.active {
+  background: linear-gradient(to right, cyan 50%, transparent 25%);
 }
 /* ENDS Styling for Nav Section */
 
@@ -117,6 +126,7 @@
 }
 
 .project-container {
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -129,7 +139,7 @@
   position: relative;
   text-align: center;
   width: 100%;
-  height: 250px; 
+  height: 200px; 
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -192,7 +202,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: auto;
   margin-bottom: 10px; /* to prevent the footer from being hidden behind the projects */
 }
 
@@ -201,6 +211,7 @@
   font-size: 30px;
   font-family: 'Protest Riot', cursive;
   text-align: center;
+  text-decoration: underline;
 }
 
 .resume-container {
@@ -228,7 +239,6 @@
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
   padding: 20px;
-  min-height: 100%;
 }
 
 .skill {
@@ -248,7 +258,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   width: 500px;
   margin: 20px;
@@ -269,7 +278,7 @@
 .circle {
   border-radius: 50%;
   position: relative;
-  animation: bubble 6s infinite;
+  animation: bubble 4s infinite;
 }
 
 @keyframes bubble {
@@ -281,6 +290,12 @@
   }
   100% {
       box-shadow: 0 0 0px rgba(81, 197, 207, 0.5);
+  }
+}
+
+@media (max-width: 720px) {
+  .resume-container {
+    flex-direction: column;
   }
 }
 
@@ -382,6 +397,12 @@ input[type="submit"]:hover {
   background-color: white;
   transition: background-color 0.3s ease;
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column; 
+  }
 }
 /* ENDS Styling for Contact Section */
 

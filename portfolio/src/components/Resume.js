@@ -13,7 +13,7 @@ const Skill = ({ Icon, skillName, progress, color }) => {
 
     return (
         <div className="skill">
-        <Icon size={25}/>
+        <Icon size={18}/>
         <svg className="circle" width="120" height="120">
             <circle
                 className="progress-ring__circle"
@@ -73,21 +73,21 @@ export const Resume = () => {
                     <h2 className="resume-title">Job Experience</h2>
 
                     <h3>RenewAire LLC - Waunakee, WI</h3>
-                    <p>Job Title: Commercial Tech</p>
-                    <p>Dates: Dec 2022 - Current</p>
-                    <p>Job Description: Build ventilation systems, Wire electrical components (unit & controllers) according to schematic layouts, Run  HiPot  tests  and  perform  live  electrical  tests  to  ensure  units are running properly</p>
+                    <p><h4>Job Title</h4> Commercial Tech</p>
+                    <p><h4>Dates</h4> Dec 2022 - Current</p>
+                    <p><h4>Job Description</h4> ~ Build ventilation systems, Wire electrical components (unit & controllers) according to schematic layouts, Run  HiPot  tests  and  perform  live  electrical  tests  to  ensure  units are running properly</p>
 
                     <h3>ThermaStor - Madison, WI</h3>
-                    <p>Job Title: Refrigeration Tech</p>
-                    <p>Dates: July 2020 - Apr 2022</p>
-                    <p>Job Description: Charge units with refrigerant, Braze & Assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box unites for shipping</p>
+                    <p><h4>Job Title</h4> Refrigeration Tech</p>
+                    <p><h4>Dates</h4> July 2020 - Apr 2022</p>
+                    <p><h4>Job Description</h4> ~ Charge units with refrigerant, Braze & Assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box unites for shipping</p>
                 </div>
 
                 <div className="education-container">
                     <h2 className="resume-title"> Education </h2>
 
                     <h3>UW Madison Coding Bootcamp</h3>
-                    <p>Date/Grad: August 2023 - Feb 2024!</p>
+                    <p><h4>Date/Grad</h4> August 2023 - Feb 2024!</p>
                     <p>~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
 
                     <div className="skill-wrapper">

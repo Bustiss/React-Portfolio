@@ -11,7 +11,7 @@ export const Navigation = ({ setActiveLink, activeLink }) => {
     const links = linkItems.map((link) => // Map through the array of links
         <Nav.Link 
             key={link}
-            href={`#${link.toLocaleLowerCase()}`} 
+            href={`#${link}`} 
             onClick={() => handleNavClick(link)} // Call handleNavClick function when link is clicked
             className={`nav-link ${activeLink === link ? 'active' : ''}`} // Add active class if active page is the current link
         >
@@ -25,7 +25,12 @@ export const Navigation = ({ setActiveLink, activeLink }) => {
             
                 <Nav className="me-auto">
                     {links}
-                    <Button className="button" onClick={() => handleNavClick('Contact')}>Contact Me</Button>{' '} 
+                    <Button 
+                    className={`button ${activeLink === 'Contact' ? 'active' : ''}`} // Add active class if active page is 'Contact'
+                    onClick={() => handleNavClick('Contact')} // Call handleNavClick function when button is clicked
+                >
+                    Contact Me
+                </Button>{' '} 
                 </Nav>
 
             </Container>
