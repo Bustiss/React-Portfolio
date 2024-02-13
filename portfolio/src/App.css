@@ -116,8 +116,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 80px);
-  overflow: hidden;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .project-container {
@@ -126,8 +127,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   overflow: hidden;
-  margin-top: 90px; /* to prevent the projects from being hidden behind the header */
 }
 
 .project {
@@ -296,3 +297,19 @@ input[type="submit"]:hover {
   transform: scale(1.1);
 }
 /* ENDS Styling for Contact Section */
+
+/* STARTS Styling for Footer Section */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* ENDS Styling for Footer Section */

@@ -6,7 +6,7 @@ import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Resume } from './components/Resume';
 import { Contact } from './components/Contact';
-
+import { Footer } from './components/Footer';
 
 function App() {
   const [activeLink, setActiveLink] = useState('About');
@@ -30,6 +30,7 @@ function App() {
     <div className="App">
       <Header setActiveLink={setActiveLink} activeLink={activeLink}/>
       <main>{renderTab()}</main>
+      <Footer />
     </div>
   );
 }

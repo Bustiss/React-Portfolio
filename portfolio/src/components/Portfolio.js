@@ -2,8 +2,17 @@ import Projects from './Projects';
 
 export const Portfolio = () => {
 
+    const pageShift = {
+        marginTop: '100px',
+        color: 'black',
+        fontSize: '50px',
+        fontFamily: 'Protest Riot',
+    }
+
 return (
     <div className="project-page">
+        <h1 style={pageShift}>Portfolio</h1>
+        <p>Here are some of my projects. Click on the images to view the live projects.</p>
     <div className="project-container">
         {Projects.map((project, index) => (
             <a className="project" href={project.link} target="_blank" rel="noopener noreferrer" key={index}>
