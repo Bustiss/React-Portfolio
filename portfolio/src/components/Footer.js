@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <footer className='footer'>
                 <a style={iconStyle} href="https://github.com/Liiv-Dev" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                <a style={iconStyle} href="www.linkedin.com/in/williejones32" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                <a style={iconStyle} href="https://www.linkedin.com/in/williejones32" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                 <a style={iconStyle} href="https://www.youtube.com/@Liiv_Dev-nw9ir" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </footer>
     )
