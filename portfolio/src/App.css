@@ -191,7 +191,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  color: white; /* text color */
+  color: white; 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -304,7 +304,7 @@
   animation: bubble 4s infinite;
 }
 
-@keyframes bubble {
+@keyframes bubble { /* Animation for the skills progression circles */
   0% {
       box-shadow: 0 0 0px rgba(81, 197, 207, 0.5);
   }
@@ -354,7 +354,6 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  margin-top: 80px;
   margin: 30px;
   padding: 20px;
   width: 400px;
@@ -367,12 +366,29 @@
   font-size: 40px;
   font-family: 'Protest Riot', cursive;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .contact-messaage {
   font-size: 18px;
-  line-height: 50px;
+  line-height: 40px;
+}
+
+.download-btn {
+  background-color: cyan;
+  color: black;
+  font-family: 'Protest Riot', cursive;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.download-btn:hover {
+  transition: background-color 0.3s ease;
+  transform: scale(1.1);
 }
 
 .form-container {
@@ -417,7 +433,7 @@
   width: 250px;
 }
 
-input[type="submit"] {
+input[type="submit"] { /* Styling for the submit button */
   background-color: cyan;
   font-family: 'Protest Riot', cursive;
   font-size: 20px;
@@ -426,10 +442,10 @@ input[type="submit"] {
   padding: 10px;
   width: 100px;
   margin: 10px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: white;
   transition: background-color 0.3s ease;
   transform: scale(1.1);
 }
