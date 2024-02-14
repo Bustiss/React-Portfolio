@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # email templates
-.env
+src/components/EmailConfig.js

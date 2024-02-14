@@ -107,10 +107,32 @@
 }
 
 .about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 12px -12px 10px cyan;
   border-radius: 10px;
-  width: 30%;
+  width: 300px;
   height: 400px;
+}
+
+.image {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 150px;
+}
+
+@media (max-width: 890px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about-image {
+    width: 400px;
+  }
+
 }
 /* ENDS Styling for About Section */
 
@@ -184,9 +206,10 @@
   }
 }
 
-@media (min-width: 890px) {
+@media (max-width: 899px) {
   .project-container {
-    overflow: hidden; /* hide the scrollbar on larger screens */
+    overflow: auto; 
+    width: 99%;
   }
 }
 
@@ -219,7 +242,7 @@
   margin-top: 60px;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
   height: auto;
   padding: 20px;
   margin: 0 auto;
@@ -235,6 +258,7 @@
 
 .education-container {
   width: 500px;
+  height: 600px;
   margin: 20px;
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
@@ -256,10 +280,9 @@
 
 .skills-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   width: 500px;
+  height: 500px;
   margin: 20px;
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
@@ -296,6 +319,18 @@
 @media (max-width: 720px) {
   .resume-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1197px) {
+  .education-container {
+    height: auto;
+  }
+}
+
+@media (max-width: 1255px) {
+  .skills-container {
+    height: auto;
   }
 }
 
@@ -399,9 +434,9 @@ input[type="submit"]:hover {
   transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 959px) {
   .contact-container {
-    flex-direction: column; 
+    height: auto;
   }
 }
 /* ENDS Styling for Contact Section */

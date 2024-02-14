@@ -69,6 +69,7 @@ export const Resume = () => {
     return (
         <div className="resume-page">
             <div className="resume-container">
+                
                 <div className="job-container">
                     <h2 className="resume-title">Job Experience</h2>
 
@@ -88,18 +89,18 @@ export const Resume = () => {
 
                     <h3>UW Madison Coding Bootcamp</h3>
                     <p><h4>Date/Grad</h4> August 2023 - Feb 2024!</p>
-                    <p>~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
-
+                    <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
+                    
                     <div className="skill-wrapper">
                         <Skill Icon={IoIosSchool} skillName="CSS3" progress={86} color="white" />
                     </div>
-                
                 </div>
 
                 <div className="skills-container">
                     <h2 className="resume-title"> Skills </h2>
                     <Skills />
                 </div>
+
             </div>
         </div>
     );
