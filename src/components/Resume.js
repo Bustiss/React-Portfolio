@@ -82,6 +82,10 @@ export const Resume = () => {
                     <p><h4>Job Title</h4> Refrigeration Tech</p>
                     <p><h4>Dates</h4> July 2020 - Apr 2022</p>
                     <p><h4>Job Description</h4> ~ Charge units with refrigerant, Braze & Assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box unites for shipping</p>
+                    <br/>
+                <a href="./images/Willie-Jones.pdf" download="Resume.pdf" className='download-btn'>
+                    Download
+                </a>
                 </div>
 
                 <div className="education-container">
