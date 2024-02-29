@@ -6,16 +6,16 @@
         "description": "Fun Quiz Game to play when your bored!"
     },
     {
+        "image": "./images/Work-day-scheduler.png",
+        "name": "Task Calendar",
+        "link": "https://liiv-dev.github.io/Coding-Quiz/",
+        "description": "Calendar application that allows a user to save events for each hour of a typical working day (9am to 5pm)"
+    },
+    {
         "image": "./images/WeatherAPI.png",
         "name": "Weather Api",
         "link": "https://liiv-dev.github.io/Weather-App/",
         "description": "App to check weather in the US's biggest cities!"
-    },
-    {
-        "image": "./images/Work-day-scheduler.png",
-        "name": "WordDay Scheduler",
-        "link": "https://liiv-dev.github.io/Work-Day-Scheduler/",
-        "description": "Calendar Application that allows a user to save events for each hour of a typical working day"
     },
     {
         "image": "./images/ORM-Backend.jpeg",
@@ -28,6 +28,18 @@
         "name": "NoSQL Social Network",
         "link": "https://www.youtube.com/watch?v=MvnfrBR-FvU",
         "description": "Walkthrough API for my social network that uses a NoSQL database SO THAT the website can handle large amounts of unstructured data"
+    },
+    {
+        "image": "/images/mern-library.jpeg",
+        "name": "Mern-Library",
+        "link": "https://mern-book-library-bp2g.onrender.com",
+        "description": "Search for new books to read and keep a list of books to purchase"
+    },
+    {
+        "image": "./images/redux-store.jpeg",
+        "name": "Redux Store",
+        "link": "https://redux-store-fznt.onrender.com",
+        "description": "platform to use Redux to manage global state instead of the Context API"
     },
     {
         "image": "/images/place holder pic.webp",
