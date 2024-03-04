@@ -13,6 +13,7 @@ return (
     <div className="project-page">
         <h1 style={pageShift}>Portfolio</h1>
         <p>Here are some of my projects. Click on the images to view the live projects.</p>
+        <a href="https://github.com/Liiv-Dev" target="_blank" rel="noopener noreferrer">https://github.com/Liiv-Dev</a>
     <div className="project-container">
         {Projects.map((project, index) => (
             <a className="project" href={project.link} target="_blank" rel="noopener noreferrer" key={index}>

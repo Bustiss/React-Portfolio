@@ -42,6 +42,12 @@
         "description": "platform to use Redux to manage global state instead of the Context API"
     },
     {
+        "image": "./images/map.png",
+        "name": "JournMEy",
+        "link": "https://journmey.onrender.com",
+        "description": "Take a Journey with me 🌍! Group (3) Map Project"
+    },
+    {
         "image": "/images/place holder pic.webp",
         "name": "Check Back",
         "link": "...",

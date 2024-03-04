@@ -154,7 +154,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .project {
