@@ -96,7 +96,7 @@ export const Resume = () => {
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
                     
                     <div className="skill-wrapper">
-                        <Skill Icon={IoIosSchool} skillName="CSS3" progress={86} color="white" />
+                        <Skill Icon={IoIosSchool} skillName="CSS3" progress={100} color="white" />
                     </div>
                 </div>
 
