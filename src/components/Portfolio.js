@@ -3,16 +3,22 @@ import Projects from './Projects';
 export const Portfolio = () => {
 
     const pageShift = {
-        marginTop: '100px',
         color: 'black',
         fontSize: '50px',
         fontFamily: 'Protest Riot',
     }
 
+    const bioStyle = {
+        color: 'black',
+        fontSize: '20px',
+        fontFamily: 'Protest Riot',
+        textAlign: "center",
+    }
+
 return (
     <div className="project-page">
         <h1 style={pageShift}>Portfolio</h1>
-        <p>Here are some of my projects. Click on the images to view the live projects.</p>
+        <p style={bioStyle}>Here are some of my projects. Click on the images to view the projects Live...<br/> CLICK the link below to view Repositories for each Project</p>
         <a href="https://github.com/Liiv-Dev" target="_blank" rel="noopener noreferrer">https://github.com/Liiv-Dev</a>
     <div className="project-container">
         {Projects.map((project, index) => (

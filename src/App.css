@@ -142,8 +142,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin-top: -20px;
+  height: auto;
   margin-bottom: 40px; /* to prevent the footer from being hidden behind the projects */
 }
 
@@ -154,7 +153,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
+  margin-top: 20px;
 }
 
 .project {
@@ -257,8 +256,7 @@
 }
 
 .education-container {
-  width: 500px;
-  height: 600px;
+  width: 500px;;
   margin: 20px;
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
@@ -274,7 +272,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
 }
 
 

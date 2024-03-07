@@ -96,8 +96,15 @@ export const Resume = () => {
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
                     
                     <div className="skill-wrapper">
-                        <Skill Icon={IoIosSchool} skillName="CSS3" progress={100} color="white" />
+                        <Skill className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={100} color="white" />
                     </div>
+
+                    <h3>Codecademy - Online</h3>
+                    <p><h4>Course</h4>~ Full stack Engineer </p>
+                    <div className="skill-wrapper">
+                        <Skill className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={30} color="white" />
+                    </div>
+                    
                 </div>
 
                 <div className="skills-container">
