@@ -1,5 +1,11 @@
 [
     {
+        "image": "./images/Convo.jpeg",
+        "name": "Convo",
+        "link": "https://convo-on6g.onrender.com",
+        "description": "Convo is an app to use for small talk and connecting with friends"
+    },
+    {
         "image": "./images/map.png",
         "name": "JournMEy",
         "link": "https://journmey.onrender.com",
