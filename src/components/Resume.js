@@ -56,11 +56,11 @@ const Skills = () => {
     return (
         <div className="skills-progression">
             <Skill Icon={FaHtml5} skillName="HTML5" progress={98} color="white" />
-            <Skill Icon={FaCss3Alt} skillName="CSS3" progress={90} color="white" />
+            <Skill Icon={FaCss3Alt} skillName="CSS3" progress={96} color="white" />
             <Skill Icon={IoLogoJavascript} skillName="JavaScript" progress={88} color="white" />
             <Skill Icon={FaDatabase} skillName="MySQL" progress={80} color="white" />
             <Skill Icon={FaNode} skillName="Node.js" progress={86} color="white" />
-            <Skill Icon={FaReact} skillName="React" progress={80} color="white" />
+            <Skill Icon={FaReact} skillName="React" progress={86} color="white" />
         </div>
     );
 };
@@ -83,7 +83,7 @@ export const Resume = () => {
                     <p><h4>Dates</h4> July 2020 - Apr 2022</p>
                     <p><h4>Job Description</h4> ~ Charge units with refrigerant, Braze & Assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box unites for shipping</p>
                     <br/>
-                <a href="./images/Willie-Jones.pdf" download="Resume.pdf" className='download-btn'>
+                <a href="./images/Resume2024.pdf" download="Resume.pdf" className='download-btn'>
                     Download
                 </a>
                 </div>
@@ -102,7 +102,7 @@ export const Resume = () => {
                     <h3>Codecademy - Online</h3>
                     <p><h4>Course</h4>~ Full stack Engineer </p>
                     <div className="skill-wrapper">
-                        <Skill className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={30} color="white" />
+                        <Skill className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={40} color="white" />
                     </div>
                     
                 </div>

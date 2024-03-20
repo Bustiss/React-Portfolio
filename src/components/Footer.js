@@ -6,7 +6,7 @@ import '../App.css'; // Imports App.css for styling
 export const Footer = () => {
 
     const iconStyle = {
-        fontSize: '40px',
+        fontSize: '30px',
         color: 'white',
         marginRight: '10px'
     }
