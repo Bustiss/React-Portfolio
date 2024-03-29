@@ -100,7 +100,7 @@ export const Resume = () => {
                     </div>
 
                     <h3>Codecademy - Online</h3>
-                    <p><h4>Course</h4>~ Full stack Engineer </p>
+                    <p><h4>Course</h4>~ Computer Science </p>
                     <div className="skill-wrapper">
                         <Skill className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={40} color="white" />
                     </div>
