@@ -15,6 +15,12 @@ export const Portfolio = () => {
         textAlign: "center",
     }
 
+    const projectNameStyle = {
+        fontFamily: 'Protest Riot',
+        
+
+    }
+
 return (
     <div className="project-page">
         <h1 style={pageShift}>Portfolio</h1>
@@ -25,7 +31,7 @@ return (
             <a className="project" href={project.link} target="_blank" rel="noopener noreferrer" key={index}>
                 <img className="project-image" src={project.image} alt={project.name} />
                 <div className="project-info">
-                <h2>{project.name}</h2>
+                <h1 style={projectNameStyle}>{project.name}</h1>
                 <p>{project.description}</p>
                 </div>
             </a>

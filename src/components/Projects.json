@@ -1,5 +1,11 @@
 [
     {
+        "image": "/images/place holder pic.webp",
+        "name": "Conspira",
+        "link": "...",
+        "description": "COMING SOON!\nA 2 sided social media platform for content creators and conspiracy theorists!"
+    },
+    {
         "image": "./images/Convo.jpeg",
         "name": "Convo",
         "link": "https://convo-on6g.onrender.com",
@@ -52,11 +58,5 @@
         "name": "Quiz Game",
         "link": "https://liiv-dev.github.io/Coding-Quiz/",
         "description": "Fun Quiz Game to play when your bored!"
-    },
-    {
-        "image": "/images/place holder pic.webp",
-        "name": "Check Back",
-        "link": "...",
-        "description": "A Description is supposed to go here😓"
     }
 ]
