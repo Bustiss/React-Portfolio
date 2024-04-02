@@ -92,7 +92,11 @@ export const Resume = () => {
                     <h2 className="resume-title"> Education </h2>
 
                     <h3>UW Madison Coding Bootcamp</h3>
-                    <p><h4>Date/Grad</h4> August 2023 - Feb 2024!</p>
+                    <p><h4>Date/Grad</h4> August 2023 - Feb 2024! 
+                    <a href="./images/Willie Jones.pdf" download="Willie Jones.pdf" className='download-btn'>
+                    Certificate
+                    </a>
+                    </p>
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
                     
                     <div className="skill-wrapper">
