@@ -5,6 +5,7 @@ import { FaDatabase } from "react-icons/fa";
 import { IoIosSchool } from "react-icons/io";
 import { FaNode } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 
 const Skill = ({ Icon, skillName, progress, color }) => {
     const radius = 52;
@@ -55,12 +56,13 @@ const Skill = ({ Icon, skillName, progress, color }) => {
 const Skills = () => {
     return (
         <div className="skills-progression">
-            <Skill Icon={FaHtml5} skillName="HTML5" progress={98} color="white" />
-            <Skill Icon={FaCss3Alt} skillName="CSS3" progress={96} color="white" />
+            <Skill Icon={FaHtml5} skillName="HTML5" progress={99} color="white" />
+            <Skill Icon={FaCss3Alt} skillName="CSS3" progress={99} color="white" />
             <Skill Icon={IoLogoJavascript} skillName="JavaScript" progress={88} color="white" />
             <Skill Icon={FaDatabase} skillName="MySQL" progress={80} color="white" />
             <Skill Icon={FaNode} skillName="Node.js" progress={86} color="white" />
             <Skill Icon={FaReact} skillName="React" progress={86} color="white" />
+            <Skill Icon={FaPython} skillName="Python" progress={80} color="white" />
         </div>
     );
 };
@@ -92,11 +94,13 @@ export const Resume = () => {
                     <h2 className="resume-title"> Education </h2>
 
                     <h3>UW Madison Coding Bootcamp</h3>
+
                     <p><h4>Date/Grad</h4> August 2023 - Feb 2024! 
                     <a href="./images/Willie Jones.pdf" download="Willie Jones.pdf" className='download-btn'>
                     Certificate
                     </a>
                     </p>
+                    
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
                     
                     <div className="skill-wrapper">
