@@ -1,0 +1,22 @@
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import '../App.css'; // Imports App.css for styling
+
+export const LeftNav = () => {
+    console.log('Rendering LeftNav');
+
+    const iconStyle = {
+        fontSize: '35px',
+        color: 'white',
+        margin: '1px',
+    }
+
+    return (
+        <nav className='left-nav'>
+                <a className='icon' style={iconStyle} href="https://github.com/Liiv-Dev" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                <a className='icon' style={iconStyle} href="https://www.linkedin.com/in/williejones32" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                <a className='icon' style={iconStyle} href="https://www.youtube.com/@Liiv_Dev-nw9ir" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+        </nav>
+    )
+};

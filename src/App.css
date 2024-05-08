@@ -117,7 +117,7 @@
 }
 
 .image {
-  width: 100%;
+  width: 90%;
   height: 85%;
   object-fit: cover;
   border-radius: 150px;
@@ -139,28 +139,30 @@
 /* STARTS Styling for Project Section */
 .project-page {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: auto;
-  margin-bottom: 40px; /* to prevent the footer from being hidden behind the projects */
+  justify-content: space-evenly;
+  height: 100vh;
+  width: auto;
+  background: linear-gradient(65deg, black 45%, white 90%);
 }
 
 .project-container {
-  height: auto;
+  height: 80%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  align-items: stretch;
 }
 
 .project {
   position: relative;
   text-align: center;
   width: 100%;
-  height: 200px; 
+  height: 250px; 
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -221,42 +223,33 @@
 
 /* STARTS Styling for Resume Section */
 .resume-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-  margin-bottom: 10px; /* to prevent the footer from being hidden behind the projects */
+  background: white;
+  padding-left: 50px;
+  padding-right: 40px;
 }
 
 .resume-title {
   color: black;
-  font-size: 30px;
   font-family: 'Protest Riot', cursive;
   text-align: center;
   text-decoration: underline;
 }
 
 .resume-container {
-  background-color: white;
-  margin-top: 60px;
   display: flex;
   flex-direction: row;
-  width: 90%;
-  height: auto;
-  padding: 20px;
-  margin: 0 auto;
-  }
+  padding: 10px;
+}
 
 .job-container {
-  width: 500px;
-  margin: 20px;
+  width: 33.3vw;
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
   padding: 20px;
 }
 
 .education-container {
-  width: 500px;;
+  width: 33.3vw;
   margin: 20px;
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
@@ -278,9 +271,7 @@
 .skills-container {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  height: 650px;
-  margin: 20px;
+  width: 33.3vw;
   border-radius: 20px;
   box-shadow: 12px 12px 10px cyan;
   padding: 20px;
@@ -330,6 +321,12 @@
     height: auto;
   }
 }
+@media (max-width: 1300px) {
+  .skills-container {
+    height: auto;
+  }
+}
+
 
 /* ENDS Styling for Resume Section */
 
@@ -455,13 +452,25 @@ input[type="submit"]:hover {
 /* ENDS Styling for Contact Section */
 
 /* STARTS Styling for Footer Section */
-.footer {
-  flex-direction: row;
+.left-nav {
+  position: fixed; 
+  bottom: 10%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
-  color: white;
+  border-radius: 30px;
   padding: 10px;
-  display: flex;
+  z-index: 1;
+}
+.icon:hover {
+  transform: scale(1.5); 
+  transition: transform 0.3s ease;
 }
 /* ENDS Styling for Footer Section */
+
+.fp-tooltip {
+  display: none !important;
+}

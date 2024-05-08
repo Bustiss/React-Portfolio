@@ -26,7 +26,7 @@ export const About = () => {
             </div>
 
             <div className='about-image'>
-                <img className="image" src='./images/Portfolio-Image.png' alt="Will's portfolio" />
+                <img className="image" src='./images/profile-filler.jpg' alt="Will's portfolio" />
             </div>
         </div>
     )
