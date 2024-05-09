@@ -10,59 +10,46 @@ import { FaPython } from "react-icons/fa";
 export const Attribute = ({ Icon, skillName, progress, color }) => {
   const radius = 52;
   const circumference = 2 * Math.PI * radius;
-  const progressOffset = ((100 - progress) / 100) * circumference;
 
   return (
-      <div className="skill">
-      <Icon size={18}/>
+    <div className="skill">
       <svg className="circle" width="120" height="120">
-          <circle
-              className="progress-ring__circle"
-              stroke={color}
-              strokeWidth="6"
-              fill="transparent"
-              r={radius}
-              cx="60"
-              cy="60"
-          />
-          <circle
-              className="progress-ring__circle"
-              stroke="cyan"
-              strokeWidth="6"
-              fill="transparent"
-              r={radius}
-              cx="60"
-              cy="60"
-              strokeDasharray={circumference}
-              strokeDashoffset={progressOffset}
-              transform={`rotate(-90 60 60)`} // Rotates the circle to start from the top
-          />
-          <text
-              x="50%" 
-              y="50%" 
-              textAnchor="middle" 
-              stroke="black" 
-              strokeWidth="1px" 
-              dy=".3em"
-              fontSize="15px"
-          >
-              {progress}%
-          </text>
+        <circle
+          className="progress-ring__circle"
+          stroke={color}
+          strokeWidth="6"
+          fill="transparent"
+          r={radius}
+          cx="60"
+          cy="60"
+        />
+        <circle
+          className="progress-ring__circle"
+          stroke="cyan"
+          strokeWidth="6"
+          fill="transparent"
+          r={radius}
+          cx="60"
+          cy="60"
+        />
+        <foreignObject x="30%" y="28%" width="60" height="60">
+          <Icon size={50}/>
+        </foreignObject>
       </svg>
-  </div>
+    </div>
   );
 };
 
 const Skill = () => {
   return (
       <div className="skills-progression">
-          <Attribute Icon={FaHtml5} skillName="HTML5" progress={99} color="white" />
-          <Attribute Icon={FaCss3Alt} skillName="CSS3" progress={99} color="white" />
-          <Attribute Icon={IoLogoJavascript} skillName="JavaScript" progress={88} color="white" />
-          <Attribute Icon={FaDatabase} skillName="MySQL" progress={80} color="white" />
-          <Attribute Icon={FaNode} skillName="Node.js" progress={86} color="white" />
-          <Attribute Icon={FaReact} skillName="React" progress={86} color="white" />
-          <Attribute Icon={FaPython} skillName="Python" progress={80} color="white" />
+          <Attribute Icon={FaHtml5} color="white" />
+          <Attribute Icon={FaCss3Alt} color="white" />
+          <Attribute Icon={IoLogoJavascript} color="white" />
+          <Attribute Icon={FaDatabase} color="white" />
+          <Attribute Icon={FaNode} color="white" />
+          <Attribute Icon={FaReact} color="white" />
+          <Attribute Icon={FaPython} color="white" />
       </div>
   );
 };

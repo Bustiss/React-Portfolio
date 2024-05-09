@@ -19,9 +19,6 @@ export const Resume = () => {
                     <p><h4>Dates</h4> July 2020 - Apr 2022</p>
                     <p><h4>Job Description</h4> ~ Charge units with refrigerant, Braze & Assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box unites for shipping</p>
                     <br/>
-                <a href="./images/Resume2024.pdf" download="Resume.pdf" className='download-btn'>
-                    Download
-                </a>
                 </div>
 
                 <div className="education-container">
@@ -36,16 +33,9 @@ export const Resume = () => {
                     </p>
                     
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
-                    
-                    <div className="skill-wrapper">
-                        <Attribute className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={100} color="white" />
-                    </div>
 
                     <h3>Codecademy - Online</h3>
                     <p><h4>Course</h4>~ Computer Science </p>
-                    <div className="skill-wrapper">
-                        <Attribute className="Ed-Graph" Icon={IoIosSchool} skillName="CSS3" progress={40} color="white" />
-                    </div>
                 </div>
             </div>
         </div>
