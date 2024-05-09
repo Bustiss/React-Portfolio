@@ -6,6 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Resume } from './components/Resume';
+import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { LeftNav } from './components/LeftNav';
 
@@ -17,7 +18,7 @@ return (
     <LeftNav />
     <ReactFullpage
       navigation
-      sectionsColor={["#282c34", "#696969", "#282c34", "#282c34"]}
+      sectionsColor={["#282c34", "#696969", "#282c34", "#282c34", "#282c34"]}
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
@@ -29,6 +30,9 @@ return (
             </div>
             <div className="section">
               <Resume />
+            </div>
+            <div className="section">
+              <Skills />
             </div>
             <div className="section">
               <Contact />
