@@ -9,7 +9,6 @@ import { FaPython } from "react-icons/fa";
 
 export const Attribute = ({ Icon, skillName, progress, color }) => {
   const radius = 52;
-  const circumference = 2 * Math.PI * radius;
 
   return (
     <div className="skill">

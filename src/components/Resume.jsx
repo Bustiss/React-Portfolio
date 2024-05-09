@@ -1,6 +1,3 @@
-import { Attribute } from "./Skills";
-import { IoIosSchool } from "react-icons/io";
-
 export const Resume = () => {
     return (
         <div className="resume-page">
