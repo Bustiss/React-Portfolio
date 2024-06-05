@@ -12,6 +12,12 @@
         "description": "Convo is an app to use for small talk and connecting with friends"
     },
     {
+        "image": "/images/rps.jpeg",
+        "name": "Rock, Paper, Scissors",
+        "link": "https://bustiss.github.io/Rock-Paper-Scissors/",
+        "description": "Rock-Paper-Scissors Game to play & copy"
+    },
+    {
         "image": "./images/map.png",
         "name": "JournMEy",
         "link": "https://journmey.onrender.com",
@@ -22,12 +28,6 @@
         "name": "Redux Store",
         "link": "https://redux-store-fznt.onrender.com",
         "description": "platform to use Redux to manage global state instead of the Context API"
-    },
-    {
-        "image": "/images/mern-library.jpeg",
-        "name": "Mern-Library",
-        "link": "https://mern-book-library-bp2g.onrender.com",
-        "description": "Search for new books to read and keep a list of books to purchase"
     },
     {
         "image": "/images/NoSQL.png",
