@@ -223,6 +223,7 @@
 
 /* STARTS Styling for Resume Section */
 .resume-page {
+  height: 100vh;
   background: linear-gradient(125deg, black 45%, white 90%);
   display: flex;
   flex-direction: row;
@@ -349,10 +350,7 @@
 
 /* STARTS Styling for Contact Section */
 .contact-container {
-  background-color: white;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -367,9 +365,9 @@
   border-radius: 10px;
   margin: 30px;
   padding: 20px;
-  width: 400px;
-  height: 400px;
-  box-shadow: -12px -12px 10px cyan;
+  width: 60vw;
+  text-align: center;
+  box-shadow: -12px 12px 10px cyan;
   color: white;
 }
 
@@ -381,8 +379,13 @@
 }
 
 .contact-messaage {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 40px;
+}
+
+.contact-phone {
+  font-size: 24px;
+  color: aqua;
 }
 
 .download-btn {

@@ -1,8 +1,8 @@
 export const Resume = () => {
     return (
         <div className="resume-page">
+
             <div className="resume-container">
-                
                 <div className="job-container">
                     <h2 className="resume-title">Job Experience</h2>
 
@@ -32,9 +32,10 @@ export const Resume = () => {
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
 
                     <h3>Codecademy - Online</h3>
-                    <p><h4>Course</h4>~ Computer Science </p>
+                    <p><h4>Course</h4>~ Data Scientist: Machine Learning</p>
                 </div>
             </div>
+
         </div>
     );
 };

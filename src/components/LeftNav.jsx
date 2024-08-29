@@ -14,7 +14,7 @@ export const LeftNav = () => {
 
     return (
         <nav className='left-nav'>
-                <a className='icon' style={iconStyle} href="https://github.com/Liiv-Dev" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                <a className='icon' style={iconStyle} href="https://github.com/Bustiss" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                 <a className='icon' style={iconStyle} href="https://www.linkedin.com/in/williejones32" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                 <a className='icon' style={iconStyle} href="https://www.youtube.com/@Liiv_Dev-nw9ir" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </nav>
