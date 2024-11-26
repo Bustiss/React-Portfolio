@@ -21,18 +21,16 @@ export const Resume = () => {
                 <div className="education-container">
                     <h2 className="resume-title"> Education </h2>
 
-                    <h3>UW Madison Coding Bootcamp</h3>
-
-                    <p><h4>Date/Grad</h4> August 2023 - Feb 2024! 
-                    <a href="./images/Willie Jones.pdf" download="Willie Jones.pdf" className='download-btn'>
-                    Certificate
-                    </a>
-                    </p>
+                    <h3>UW Coding School</h3>
+                    <p><i>~ Full Stack Web Deveoloper</i></p>
+                    <p><h4>Date/Grad</h4> August 2023 - Feb 2024!</p>
                     
                     <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
 
-                    <h3>Codecademy - Online</h3>
-                    <p><h4>Course</h4>~ Data Scientist: Machine Learning</p>
+                    <h3>Google - Online</h3>
+                    <p><i>~ CyberSecurity</i></p>
+                    <p><h4>Course Description</h4> ~ The Google Cybersecurity Professional Certificate provides foundational skills in cybersecurity, including threat detection, risk assessment, and incident response, using tools like Python and SIEM systems.
+                    </p>
                 </div>
             </div>
 

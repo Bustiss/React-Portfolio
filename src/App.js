@@ -25,7 +25,7 @@ return (
             <div className="section">
               <About />
             </div>
-            <div className="section">
+            {/*<div className="section">
               <Portfolio />
             </div>
             <div className="section">
@@ -36,7 +36,7 @@ return (
             </div>
             <div className="section">
               <Contact />
-            </div>
+            </div> */}
           </ReactFullpage.Wrapper>
         );
       }}

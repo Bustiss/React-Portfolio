@@ -30,7 +30,7 @@ return (
 
         <div className="project-container">
             {Projects.map((project, index) => (
-            <a className="project" href={project.link} target="_blank" rel="noopener noreferrer" key={index}>
+            <a className="project" target="_blank" rel="noopener noreferrer" key={index} >
                 <img className="project-image" src={project.image} alt={project.name} />
                 <div className="project-info">
                     <h1 style={projectNameStyle}>{project.name}</h1>

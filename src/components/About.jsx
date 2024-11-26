@@ -3,7 +3,7 @@ import '../App.css'; // Imports App.css for styling
 
 export const About = () => { 
     const [text, setText] = useState("");
-    const fullText = "I'm Will 👨🏾‍💻, A Software Developer and Father. I created this site to display my projects and connect with other developers! ";
+    const fullText = "! Please check back soon!"; // Text to be displayed
 
     useEffect(() => {
         let i = 0;
@@ -19,6 +19,7 @@ export const About = () => {
     }, []);
 
     return (
+        // About section
         <div id="About" className="about-container">
             <div className="text-container">
                 <h1 className="about-title"> Hello 👋🏾 </h1>
