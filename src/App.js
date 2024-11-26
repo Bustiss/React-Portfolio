@@ -4,10 +4,10 @@ import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 // import { Header } from './components/Header';
 import { About } from './components/About';
-import { Portfolio } from './components/Portfolio';
-import { Resume } from './components/Resume';
-import { Skills } from './components/Skills';
-import { Contact } from './components/Contact';
+// import { Portfolio } from './components/Portfolio';
+// import { Resume } from './components/Resume';
+// import { Skills } from './components/Skills';
+// import { Contact } from './components/Contact';
 import { LeftNav } from './components/LeftNav';
 
 function App() {
