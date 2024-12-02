@@ -15,7 +15,7 @@ export const LeftNav = () => {
         <nav className='left-nav'>
                 <a className='icon' style={iconStyle} href="https://github.com/Bustiss" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                 <a className='icon' style={iconStyle} href="https://www.linkedin.com/in/williejones32" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                <a className='icon' style={iconStyle} href="" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+                <a className='icon' style={iconStyle} target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
         </nav>
     )
 };
