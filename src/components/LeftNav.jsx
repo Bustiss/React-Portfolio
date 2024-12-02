@@ -1,6 +1,5 @@
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
-{/* import { FaYoutube } from 'react-icons/fa'; */}
 
 export const LeftNav = () => {
     console.log('Rendering LeftNav');
