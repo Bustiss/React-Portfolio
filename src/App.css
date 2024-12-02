@@ -1,496 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 
-.title {
+body{
   color: black;
-  font-size: 50px;
-  font-family: 'Protest Riot', cursive;
-  text-align: center;
-}
-
-/* STARTS Styling for Header Section */
-.header {
-  position: relative;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  height: 40px;
-  top: 0; 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 100;
-}
-
-.logo-font {
-  font-size: 40px;
   font-family: 'Protest Riot', cursive;
 }
-/* Ends Styling for Header Section */
 
-/* STARTS Styling for Nav Section */
-.nav-link {
-  color: white;
-  font-size: 15px;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: cyan;
-  text-decoration: underline;
-}
-
-.nav-link.active {
-  color: cyan; /* Change the color of the active link to cyan */
-  text-decoration: underline; /* Underline the active link */
-}
-
-.button {
-  background: linear-gradient(to right, cyan 50%, transparent 25%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.3s ease;
-  border-radius: 20px;
-  height: 30px;
-  color: White;
-  font-size: 15px;
-  margin: 0 10px;
-}
-
-.button:hover {
-  background-position: left bottom;
-  color: white;
-  transform: scale(1.1);
-}
-
-.button.active {
-  background: linear-gradient(to right, cyan 50%, transparent 25%);
-}
-/* ENDS Styling for Nav Section */
-
-/* STARTS Styling for About Section */
+/* About Page */
 .about-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
-  background: linear-gradient(125deg, black 45%, white 90%);
+  align-items: center;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
 }
 
-.text-container {
+.about-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 90%;
+  width: 800px;
+  gap: 20px;
+}
+
+.about-image img {
+  border-radius: 30px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h1 {
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-text {
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .about-image img {
+      width: 200px;
+      height: 200px;
+  }
+}
+
+/* Project Page*/
+.project-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 95%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.project-wheel {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  margin: 50px;
-  height: 400px;
-  width: 400px;
-  color: white;
-  border-radius: 10px;
-  box-shadow: -12px 12px 10px cyan;
-}
-
-.about-title {
-  color: white;
-  font-size: 50px;
-  font-family: 'Protest Riot', cursive;
-  text-align: center;
-}
-
-.about-text {
-  font-size: 20px;
-  line-height: 50px;
-}
-
-.about-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 12px -12px 10px cyan;
-  border-radius: 10px;
+  margin: 20px 0;
+  /* perspective: 1000px; */
+  height: 300px;
   width: 300px;
-  height: 400px;
-}
-
-.image {
-  width: 90%;
-  height: 85%;
-  object-fit: cover;
-  border-radius: 150px;
-}
-
-@media (max-width: 890px) {
-  .about-container {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .about-image {
-    width: 400px;
-  }
-
-}
-/* ENDS Styling for About Section */
-
-/* STARTS Styling for Project Section */
-.project-page {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  height: 100vh;
-  width: auto;
-  background: linear-gradient(65deg, black 45%, white 90%);
-}
-
-.project-container {
-  height: 80%;
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.project {
   position: relative;
-  text-align: center;
-  width: 100%;
-  height: 250px; 
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  margin: 10px;
 }
 
-.project:hover {
-  transform: scale(1.1); 
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 10px cyan;
+.project-item {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+
+.project-item.active {
+  transform: translateZ(150px); /* Bring active item forward */
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.project-item .project-name {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.project-item:hover .project-name {
+  display: block;
+}
+
+.project-item.active .project-name {
+  display: block;
 }
 
 .project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-.project-info {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.right-side {
+  width: 60%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  color: white; 
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project:hover .project-info {
-  opacity: 1;
-}
-
-@media (min-width: 600px) {
-  .project {
-    width: 50%; /* 2 projects per row on medium screens */
-  }
-}
-
-@media (max-width: 899px) {
-  .project-container {
-    overflow: auto; 
-    width: 99%;
-  }
-}
-
-@media (min-width: 900px) {
-  .project {
-    width: 25%; /* 4 projects per row on large screens */
-  }
-}
-/* ENDS Styling for Project Section */
-
-/* STARTS Styling for Resume Section */
-.resume-page {
-  height: 100vh;
-  background: linear-gradient(125deg, black 45%, white 90%);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-left: 50px;
-  padding-right: 40px;
-}
-
-.resume-title {
-  color: black;
-  font-family: 'Protest Riot', cursive;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.resume-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.job-container {
-  background-color: rgba(255, 255, 255);
-  width: 42vw;
-  border-radius: 20px;
-  box-shadow: 12px 12px 10px cyan;
-  padding: 20px;
-}
-
-.education-container {
-  background-color: rgba(255, 255, 255);
-  width: 42vw;
-  margin: 20px;
-  border-radius: 20px;
-  box-shadow: 12px 12px 10px cyan;
-  padding: 20px;
-}
-
-.skill {
+  font-size: 30px;;
   margin: 5px;
-}
-
-.skill-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.skills-page {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(60deg, black 45%, white 90%);
-}
-
-
-.skills-container {
-  background-color: rgba(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  width: 45vw;
-  border-radius: 20px;
-  box-shadow: 12px 12px 10px cyan;
-  padding: 20px;
-}
-
-.skills-progression {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.circle {
-  border-radius: 50%;
-  position: relative;
-  animation: bubble 4s infinite;
-}
-
-@keyframes bubble { /* Animation for the skills progression circles */
-  0% {
-      box-shadow: 0 0 0px rgba(81, 197, 207, 0.5);
-  }
-  50% {
-      box-shadow: 0 0 20px 10px rgba(81, 197, 207, 0.5);
-  }
-  100% {
-      box-shadow: 0 0 0px rgba(81, 197, 207, 0.5);
-  }
-}
-
-@media (max-width: 720px) {
-  .resume-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 1197px) {
-  .education-container {
-    height: auto;
-  }
-}
-
-@media (max-width: 1255px) {
-  .skills-container {
-    height: auto;
-  }
-}
-@media (max-width: 1300px) {
-  .skills-container {
-    height: auto;
-  }
-}
-
-
-/* ENDS Styling for Resume Section */
-
-/* STARTS Styling for Contact Section */
-.contact-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  background: linear-gradient(125deg, black 45%, white 90%);
-}
-
-.contact-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  margin: 30px;
-  padding: 20px;
-  width: 60vw;
-  text-align: center;
-  box-shadow: -12px 12px 10px cyan;
-  color: white;
-}
-
-.contact-title {
-  font-size: 40px;
-  font-family: 'Protest Riot', cursive;
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-.contact-messaage {
-  font-size: 24px;
-  line-height: 40px;
-}
-
-.contact-phone {
-  font-size: 24px;
-  color: aqua;
-}
-
-.download-btn {
-  background-color: cyan;
-  color: black;
-  font-family: 'Protest Riot', cursive;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);;
   border: none;
-  padding: 10px;
-  margin: 10px;
-}
-
-.download-btn:hover {
-  transition: background-color 0.3s ease;
-  transform: scale(1.1);
-}
-
-.form-container {
-  border-radius: 10px;
-  box-shadow: 12px 12px 10px cyan;
-  width: 400px;
-  margin: 30px;
-  margin-top: 80px;
-}
-
-.contact-form {
-  padding: 20px;
-  margin: 10px auto;
-  border-radius: 20px;
-  height: 400px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-form label {
-  color: white;
-  font-size: 20px;
-  font-family: 'Protest Riot', cursive;
-  margin: 10px;
-}
-
-.contact-form input {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  width: 250px;
-}
-
-.contact-form textarea {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-  width: 250px;
-}
-
-input[type="submit"] { /* Styling for the submit button */
-  background-color: cyan;
-  font-family: 'Protest Riot', cursive;
-  font-size: 20px;
-  border-radius: 20px;
-  border: none;
-  padding: 10px;
-  width: 100px;
-  margin: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
-  transition: background-color 0.3s ease;
-  transform: scale(1.1);
-}
-
-@media (max-width: 959px) {
-  .contact-container {
-    height: auto;
+@media (min-width: 768px) {
+  .project-page {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
-/* ENDS Styling for Contact Section */
 
-/* STARTS Styling for Footer Section */
+@media (min-width: 768px) {
+  .right-side {
+    width: 60%;
+  }
+}
+
+/* LeftNav */
 .left-nav {
-  position: fixed; 
-  bottom: 10%;
-  left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  border-radius: 30px;
-  padding: 10px;
-  z-index: 1;
-}
-.icon:hover {
-  transform: scale(1.5); 
-  transition: transform 0.3s ease;
-}
-/* ENDS Styling for Footer Section */
-
-.fp-tooltip {
-  display: none !important;
+  height: 20vh;
+  width: 3%;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
 }

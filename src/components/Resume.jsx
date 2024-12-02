@@ -1,10 +1,10 @@
 export const Resume = () => {
     return (
-        <div className="resume-page">
+        <div>
 
-            <div className="resume-container">
-                <div className="job-container">
-                    <h2 className="resume-title">Job Experience</h2>
+            <div style={{width:'100%', height:'100%', display:'flex',flexDirection:'row', justifyContent:'center'}}>
+                <div style={{ width: '40%', backgroundColor: '#f9f9f9', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', padding: '20px' }}>
+                    <h2>Job Experience</h2>
 
                     <h3>RenewAire LLC - Waunakee, WI</h3>
                     <p><h4>Job Title</h4> Commercial Tech</p>
@@ -18,8 +18,9 @@ export const Resume = () => {
                     <br/>
                 </div>
 
-                <div className="education-container">
-                    <h2 className="resume-title"> Education </h2>
+                <div style={{display:'flex', flexDirection:'column', alignItems:'center', width:'50%', height:'100%'}}>
+                <div style={{backgroundColor: '#f9f9f9', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', padding: '20px', marginLeft:'10px' }}>
+                    <h2> Education </h2>
 
                     <h3>UW Coding School</h3>
                     <p><i>~ Full Stack Web Deveoloper</i></p>
@@ -32,8 +33,15 @@ export const Resume = () => {
                     <p><h4>Course Description</h4> ~ The Google Cybersecurity Professional Certificate provides foundational skills in cybersecurity, including threat detection, risk assessment, and incident response, using tools like Python and SIEM systems.
                     </p>
                 </div>
+                <div>
+                    <img src="./images/CyberSecurity-Certificate.pdf" alt="" style={{width:'400px', height:'175px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', margin:'5px'}}/>
+                    <img src="./images/Willie Jones.pdf" alt="" style={{width:'400px', height:'175px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', margin:'5px'}}/>
+                </div>
+                </div>
             </div>
 
         </div>
     );
 };
+
+export default Resume;

@@ -1,34 +1,40 @@
-import React, { useEffect, useState } from 'react';
-import '../App.css'; // Imports App.css for styling
+import React, { useEffect, useState, useRef } from 'react';
+import { LeftNav } from './LeftNav';
 
 export const About = () => { 
-    const [text, setText] = useState("");
-    const fullText = "! Please check back soon!"; // Text to be displayed
+    const fullText = `! A proud father, full-stack web developer, Google-certified in cybersecurity, and an aspiring actor. I blend creativity, technical expertise, and security to craft innovative, user-friendly solutions. Let’s connect and create something extraordinary!`;
+    const [text, setText] = useState('');
+    const index = useRef(0);
 
     useEffect(() => {
-        let i = 0;
         const typing = setInterval(() => {
-            if (i < fullText.length) {
-                setText((prevText) => prevText + fullText.charAt(i));
-                i++;
+            if (index.current < fullText.length) {
+                setText((prevText) => prevText + fullText.charAt(index.current));
+                index.current += 1;
             } else {
                 clearInterval(typing);
             }
         }, 50); // Speed of typing effect
         return () => clearInterval(typing); // Cleanup on unmount
-    }, []);
+    }, [fullText]);
 
     return (
-        // About section
-        <div id="About" className="about-container">
-            <div className="text-container">
-                <h1 className="about-title"> Hello 👋🏾 </h1>
-                <p className='about-text'>{text}</p>
+        <div className="about-container">
+            <div className="about-card">
+                <div className="about-image">
+                    <img 
+                        src="./images/profile-filler.jpg" 
+                        alt="Profile of a proud father and web developer" 
+                    />
+                </div>
+                <div className="about-text">
+                    <h1>Hello 👋🏾</h1>
+                    <p>{text}</p>
+                </div>
             </div>
-
-            <div className='about-image'>
-                <img className="image" src='./images/profile-filler.jpg' alt="Will's portfolio" />
-            </div>
+            <LeftNav />
         </div>
-    )
-}
+    );
+};
+
+export default About;
