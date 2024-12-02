@@ -11,17 +11,6 @@ export const LeftNav = () => {
         margin: '1px',
     }
 
-    const navStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-evenly',
-        alignItems: 'center',
-        backgroundColor: '#282c34',
-        padding: '20px',
-        margin: '10px',
-        borderRadius: '30px'
-    }
-
     return (
         <nav className='left-nav'>
                 <a className='icon' style={iconStyle} href="https://github.com/Bustiss" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
