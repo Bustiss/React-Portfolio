@@ -67,6 +67,22 @@ body{
   }
 }
 
+/* LeftNav */
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 3%;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
 /* Project Page*/
 .project-page {
   display: flex;
@@ -173,18 +189,102 @@ button {
   }
 }
 
-/* LeftNav */
-.left-nav {
+/* Resume Container */
+/* Container and Content */
+.resume-container {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-  width: 3%;
-  background-color: #000000;
+  background-color: #f5f5f5;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
+}
+
+.resume-content {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.resume-section article {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section article h3 {
+  font-size: 1.5em;
+  color: #c47b32;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 5px;
+}
+
+.resume-section article p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.resume-section article strong {
+  color: #c47b32;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Certificates Section */
+.certificates-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.certificate-thumbnail {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.certificate-thumbnail:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-content {
+    padding: 20px;
+  }
+
+  .resume-section h2 {
+    font-size: 1.5em;
+  }
+
+  .resume-section article h3 {
+    font-size: 1.3em;
+  }
+
+  .certificate-thumbnail {
+    width: 150px;
+    height: 120px;
+  }
 }

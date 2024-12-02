@@ -1,45 +1,63 @@
+import React from 'react';
+
 export const Resume = () => {
     return (
-        <div>
-
-            <div style={{width:'100%', height:'100%', display:'flex',flexDirection:'row', justifyContent:'center'}}>
-                <div style={{ width: '40%', backgroundColor: '#f9f9f9', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', padding: '20px' }}>
+        <div className="resume-container">
+            <div className="resume-content">
+                {/* Job Experience Section */}
+                <section className="resume-section job-experience">
                     <h2>Job Experience</h2>
 
-                    <h3>RenewAire LLC - Waunakee, WI</h3>
-                    <p><h4>Job Title</h4> Commercial Tech</p>
-                    <p><h4>Dates</h4> Dec 2022 - Current</p>
-                    <p><h4>Job Description</h4> ~ Build ventilation systems, Wire electrical components (unit & controllers) according to schematic layouts, Run  HiPot  tests  and  perform  live  electrical  tests  to  ensure  units are running properly</p>
+                    <article>
+                        <h3>RenewAire LLC - Waunakee, WI</h3>
+                        <p><strong>Job Title:</strong> Commercial Tech</p>
+                        <p><strong>Dates:</strong> Dec 2022 - Current</p>
+                        <p><strong>Job Description:</strong> Build ventilation systems, wire electrical components (unit & controllers) according to schematic layouts, run HiPot tests and perform live electrical tests to ensure units are running properly.</p>
+                    </article>
 
-                    <h3>ThermaStor - Madison, WI</h3>
-                    <p><h4>Job Title</h4> Refrigeration Tech</p>
-                    <p><h4>Dates</h4> July 2020 - Apr 2022</p>
-                    <p><h4>Job Description</h4> ~ Charge units with refrigerant, Braze & Assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box unites for shipping</p>
-                    <br/>
-                </div>
+                    <article>
+                        <h3>ThermaStor - Madison, WI</h3>
+                        <p><strong>Job Title:</strong> Refrigeration Tech</p>
+                        <p><strong>Dates:</strong> July 2020 - Apr 2022</p>
+                        <p><strong>Job Description:</strong> Charge units with refrigerant, braze & assemble dehumidifiers, build electrical boxes, run hi-pot current test, final quality checks on units, box units for shipping.</p>
+                    </article>
+                </section>
 
-                <div style={{display:'flex', flexDirection:'column', alignItems:'center', width:'50%', height:'100%'}}>
-                <div style={{backgroundColor: '#f9f9f9', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', padding: '20px', marginLeft:'10px' }}>
-                    <h2> Education </h2>
+                {/* Education Section */}
+                <section className="resume-section education">
+                    <h2>Education</h2>
 
-                    <h3>UW Coding School</h3>
-                    <p><i>~ Full Stack Web Deveoloper</i></p>
-                    <p><h4>Date/Grad</h4> August 2023 - Feb 2024!</p>
-                    
-                    <p><h4>Course Description</h4> ~ Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React</p>
+                    <article>
+                        <h3>UW Coding School</h3>
+                        <p><i>~ Full Stack Web Developer</i></p>
+                        <p><strong>Date/Grad:</strong> August 2023 - Feb 2024</p>
+                        <p><strong>Course Description:</strong> Learn fundamental concepts of web development, including HTML, CSS, and JavaScript. Work with servers, databases, and other back-end technologies, such as MySQL database, and Node.js. Grow skills using NoSQL databases, convert traditional applications into progressive web applications, and learn React.</p>
+                    </article>
 
-                    <h3>Google - Online</h3>
-                    <p><i>~ CyberSecurity</i></p>
-                    <p><h4>Course Description</h4> ~ The Google Cybersecurity Professional Certificate provides foundational skills in cybersecurity, including threat detection, risk assessment, and incident response, using tools like Python and SIEM systems.
-                    </p>
-                </div>
-                <div>
-                    <img src="./images/CyberSecurity-Certificate.pdf" alt="" style={{width:'400px', height:'175px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', margin:'5px'}}/>
-                    <img src="./images/Willie Jones.pdf" alt="" style={{width:'400px', height:'175px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)', margin:'5px'}}/>
-                </div>
-                </div>
+                    <article>
+                        <h3>Google - Online</h3>
+                        <p><i>~ Cybersecurity</i></p>
+                        <p><strong>Course Description:</strong> The Google Cybersecurity Professional Certificate provides foundational skills in cybersecurity, including threat detection, risk assessment, and incident response, using tools like Python and SIEM systems.</p>
+                    </article>
+                </section>
+
+                {/* Certificates Section */}
+                <section className="resume-section certificates">
+                    <h2>Certificates</h2>
+                    <div className="certificates-images">
+                        <img
+                            src="./images/Willie Jones.pdf"
+                            alt="Resume for Willie Jones"
+                            className="certificate-thumbnail"
+                        />
+                        <img
+                            src="./images/CyberSecurity-Certificate.pdf"
+                            alt="Google Cybersecurity Certificate"
+                            className="certificate-thumbnail"
+                        />
+                    </div>
+                </section>
             </div>
-
         </div>
     );
 };
