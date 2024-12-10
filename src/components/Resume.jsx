@@ -37,7 +37,15 @@ export const Resume = () => {
                     <article>
                         <h3>Google - Online</h3>
                         <p><i>~ Cybersecurity</i></p>
+                        <p><strong>Date/Grad:</strong> Nov 2024</p>
                         <p><strong>Course Description:</strong> The Google Cybersecurity Professional Certificate provides foundational skills in cybersecurity, including threat detection, risk assessment, and incident response, using tools like Python and SIEM systems.</p>
+                    </article>
+
+                    <article>
+                        <h3>Google - Online</h3>
+                        <p><i>~ IT Support</i></p>
+                        <p><strong>Date/Grad:</strong> In Progress</p>
+                        <p><strong>Course Description:</strong> Develop skills for IT roles, including computer assembly, wireless networking, software installation, and customer service. Master troubleshooting, debugging, and systems like Linux, DNS, CLI, and binary code.</p>
                     </article>
                 </section>
 
