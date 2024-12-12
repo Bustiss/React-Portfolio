@@ -267,7 +267,9 @@ button {
 }
 
 .certificate-thumbnail:hover {
-  transform: scale(1.2);
+  transform: scale(2.0);
+  z-index: 1;
+  background-color: white;
 }
 
 /* Responsive Design */

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Skills } from './Skills';
 
 export const Resume = () => {
     return (
@@ -63,8 +64,18 @@ export const Resume = () => {
                             alt="Google Cybersecurity Certificate"
                             className="certificate-thumbnail"
                         />
+                        <img
+                            src="./images/IT Support Fundamentals.pdf"
+                            alt="Google IT Support Certificate"
+                            className="certificate-thumbnail"
+                        />
                     </div>
                 </section>
+                    
+                    {/* Skills Section */}
+                    <section className="resume-section">
+                        <Skills />
+                    </section>
             </div>
         </div>
     );

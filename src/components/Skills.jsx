@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.css';
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
@@ -24,7 +25,7 @@ export const Attribute = ({ Icon, skillName, progress, color }) => {
         />
         <circle
           className="progress-ring__circle"
-          stroke="cyan"
+          stroke="#c47b32"
           strokeWidth="6"
           fill="transparent"
           r={radius}
@@ -41,7 +42,7 @@ export const Attribute = ({ Icon, skillName, progress, color }) => {
 
 const Skill = () => {
   return (
-      <div className="skills-progression">
+      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap'}}>
           <Attribute Icon={FaHtml5} color="white" />
           <Attribute Icon={FaCss3Alt} color="white" />
           <Attribute Icon={IoLogoJavascript} color="white" />
@@ -56,7 +57,7 @@ const Skill = () => {
 export const Skills = () => {
   return (
     <div className="skills-page">
-      <div className="skills-container">
+      <div className="resume-section">
         <h2 className="resume-title"> Skills </h2>
         <Skill />
       </div>
