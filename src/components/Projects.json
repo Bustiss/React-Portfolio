@@ -20,19 +20,19 @@
     {
         "image": "./images/map.png",
         "name": "JournMEy",
-        "link": "https://journmey.onrender.com",
+        "link": "https://github.com/Bustiss/journMEy",
         "description": "Take a Journey with me 🌍! Group (3) Map Project"
     },
     {
         "image": "./images/redux-store.jpeg",
         "name": "Redux Store",
-        "link": "https://redux-store-fznt.onrender.com",
+        "link": "https://github.com/Bustiss/Redux-Store",
         "description": "platform to use Redux to manage global state instead of the Context API"
     },
     {
         "image": "/images/NoSQL.png",
         "name": "NoSQL Social Network",
-        "link": "https://www.youtube.com/watch?v=MvnfrBR-FvU",
+        "link": "https://github.com/Bustiss/NoSQL-Social-Network-API",
         "description": "Walkthrough API for my social network that uses a NoSQL database SO THAT the website can handle large amounts of unstructured data"
     }
 ]

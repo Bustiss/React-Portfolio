@@ -25,8 +25,10 @@ export const Portfolio = () => {
                 transform: `rotateX(${(index - currentIndex) * 45}deg) translateZ(300px)`,
               }}
             >
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
               <img className="project-image" src={project.image} alt={project.name} />
               <div className="project-name">{project.name}</div>
+              </a>
             </div>
           ))}
         </div>
