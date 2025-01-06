@@ -41,7 +41,6 @@ export const Portfolio = () => {
       <div className="right-side">
         <h1>{Projects[currentIndex].name}</h1>
         <p>{Projects[currentIndex].description}</p>
-        <p style={{display:'flex', justifyContent:'center',fontSize:'20px', color:'red'}}>**Projects and Links being Updated**</p>
       </div>
     </div>
   );
